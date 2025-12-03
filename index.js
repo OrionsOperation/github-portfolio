@@ -63,5 +63,6 @@ window.addEventListener('DOMContentLoaded', () => {
         const id = box.getAttribute('data-id') || box.textContent.trim().slice(0, 30);
         const color = colors[hashToIndex(id, colors.length)];
         box.style.backgroundColor = color;
+        box.backgroundColor = color;
     });
 });
