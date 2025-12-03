@@ -27,16 +27,13 @@
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
+          <ul class="nav__items">
+              <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+              <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+              <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
       </nav>
     </div>
     <div class="header__text-box row">
@@ -61,68 +58,95 @@
         <h2>My Projects</h2>
         <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
+            <!-- Each div with the work__box class is a project. -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Iron Reclamation - Downloadable on itch.io</h3>
-              <p> An RTS, FPS game with giant mechs </p>
-              <ul class="work__list">
-                <li>Game</li>
-                <li>C++</li>
-                <li>Unreal Engine</li>
-                <li>Gameplay, UI</li>
-              </ul>
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>Iron Reclamation - Downloadable on itch.io</h3>
+                    <p> An RTS, FPS game with giant mechs </p>
+                    <ul class="work__list">
+                        <li>Game</li>
+                        <li>C++</li>
+                        <li>Unreal Engine</li>
+                        <li>Gameplay, UI</li>
+                    </ul>
 
-              <div class="work__links">
-                  <!-- replace with your itch.io URL -->
-                  <a href="https://lghts.itch.io/iron-reclamation" target="_blank" rel="noopener noreferrer" class="link__text">
-                      View on itch.io <span>&rarr;</span>
-                  </a>
-                  <!-- optional: link to source -->
-                  <!--<a href="https://github.com/nisarhassan12/portfolio" rel="noopener noreferrer" title="View Source Code" target="_blank">
-                      <img src="./images/github.svg" class="work__code" alt="GitHub">
-                  </a>-->
-              </div>
+                    <div class="work__links">
+                        <!-- replace with your itch.io URL -->
+                        <a href="https://lghts.itch.io/iron-reclamation" target="_blank" rel="noopener noreferrer" class="link__text">
+                            View on itch.io <span>&rarr;</span>
+                        </a>
+                        <!-- optional: link to source -->
+                        <!--<a href="https://github.com/nisarhassan12/portfolio" rel="noopener noreferrer" title="View Source Code" target="_blank">
+                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>-->
+                    </div>
+                </div>
+                <div class="work__image-box">
+                    <img src="./images/IronReclamation.png" class="work__image" alt="Iron Reclamation" />
+                </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/IronReclamation.png" class="work__image" alt="Iron Reclamation" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Ghostlight - Playable on itch.io</h3>
-              <p> A halloween themed, crafting adventure game</p>
-              <ul class="work__list">
-                <li>Game</li>
-                <li>C#</li>
-                <li>Unity Engine</li>
-                <li>Gameplay, UI, Enemy AI, Story</li>
-              </ul>
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>Ghostlight - Playable on itch.io</h3>
+                    <p> A halloween themed, crafting adventure game</p>
+                    <ul class="work__list">
+                        <li>Game</li>
+                        <li>C#</li>
+                        <li>Unity Engine</li>
+                        <li>Gameplay, UI, Enemy AI, Story</li>
+                    </ul>
 
-              <div class="work__links">
-                  <!-- replace with your itch.io URL -->
-                  <a href="https://themaninadress.itch.io/ghostlight-pc" target="_blank" rel="noopener noreferrer" class="link__text">
-                      Play on itch.io <span>&rarr;</span>
-                  </a>
-                  <!-- optional: link to source -->
-                  <!--<a href="#">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                  </a>-->
-              </div>
+                    <div class="work__links">
+                        <!-- replace with your itch.io URL -->
+                        <a href="https://themaninadress.itch.io/ghostlight-pc" target="_blank" rel="noopener noreferrer" class="link__text">
+                            Play on itch.io <span>&rarr;</span>
+                        </a>
+                        <!-- optional: link to source -->
+                        <!--<a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>-->
+                    </div>
+                </div>
+                <div class="work__image-box">
+                    <img src="./images/GhostLightLogo.png" class="work__image" alt="GhostLightLogo" />
+                </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/GhostLightLogo.png" class="work__image" alt="GhostLightLogo" />
+
+            <div class="work__box">
+                <div class="work__text">
+                    <h3>Greedy Glutton</h3>
+                    <p> A snake game built from the ground up</p>
+                    <ul class="work__list">
+                        <li>Game</li>
+                        <li>C++</li>
+                        <li>Vulkan & Entt APIs</li>
+                        <li>Gameplay, Engine, Game Rules</li>
+                    </ul>
+
+                    <div class="work__links">
+                        <!-- replace with your itch.io URL -->
+                        <a href="https://drive.google.com/drive/folders/1XnqlC1JdJ_C91enIJrDKNa-diBIus2Jm" target="_blank" rel="noopener noreferrer" class="link__text">
+                            Download the game here <span>&rarr;</span>
+                        </a>
+                        <!-- optional: link to source -->
+                        <!--<a href="#">
+                          <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                        </a>-->
+                    </div>
+                </div>
+                <div class="work__image-box">
+                    <img src="./images/GreedyGlutton.png" class="work__image" alt="GreedyGlutton" />
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- ***** Clients ***** -->
 
-    <section class="client" id="clients">
+    <section class="experience" id="clients">
       <div class="row">
         <h2>Job Experience</h2>
         <div class="client__logos">
