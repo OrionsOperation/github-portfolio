@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
         return Math.abs(h) % mod;
     };
 
-    document.querySelectorAll('section').forEach(box => {
+    document.querySelectorAll('.row').forEach(box => {
         const id = box.getAttribute('data-id') || box.textContent.trim().slice(0, 30);
         const color = colors[hashToIndex(id, colors.length)];
         box.style.backgroundColor = color;

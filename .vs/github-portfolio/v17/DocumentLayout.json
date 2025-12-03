@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "index.js",
               "ToolTip": "C:\\Projects\\GithubPortfolio\\github-portfolio\\index.js",
               "RelativeToolTip": "index.js",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAD0AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-12-03T08:03:56.622Z",
               "EditorCaption": ""
@@ -57,9 +57,10 @@
               "RelativeDocumentMoniker": "index.css",
               "ToolTip": "C:\\Projects\\GithubPortfolio\\github-portfolio\\index.css",
               "RelativeToolTip": "index.css",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAE4AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-03T07:32:56.832Z"
+              "WhenOpened": "2025-12-03T07:32:56.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -69,7 +70,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Projects\\GithubPortfolio\\github-portfolio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwD4AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwIsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-12-03T05:55:25.429Z",
               "EditorCaption": ""
