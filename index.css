@@ -38,11 +38,11 @@
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
-    --dark-brown: #3e1900;
-    --brown: #B05700;
-    --red: #b33131;
-    --red-brown: #d13604;
-    --orange: #ff7200;
+    --dark-brown: #3e1900d9;
+    --brown: #B05700d9;
+    --red: #5f0000d9;
+    --red-brown: #d13604d9;
+    --orange: #ff7200d9;
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
