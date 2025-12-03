@@ -41,3 +41,99 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    const cssVars = ['--brown', '--red-brown', '--red'];
+    const rootStyles = getComputedStyle(document.documentElement);
+    const colors = cssVars
+        .map(v => rootStyles.getPropertyValue(v).trim())
+        .filter(Boolean);
+    if (!colors.length) return;
+
+    const hashToIndex = (str, mod) => {
+        let h = 2166136261; // FNV-1a
+        for (let i = 0; i < str.length; i++) {
+            h ^= str.charCodeAt(i);
+            h += (h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24);
+        }
+        return Math.abs(h) % mod;
+    };
+
+    document.querySelectorAll('.work__box').forEach(box => {
+        const id = box.getAttribute('data-id') || box.textContent.trim().slice(0, 30);
+        const color = colors[hashToIndex(id, colors.length)];
+        box.style.backgroundColor = color;
+    });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const cssVars = ['--brown', '--red-brown', '--red'];
+    const rootStyles = getComputedStyle(document.documentElement);
+    const colors = cssVars
+        .map(v => rootStyles.getPropertyValue(v).trim())
+        .filter(Boolean);
+    if (!colors.length) return;
+
+    const hashToIndex = (str, mod) => {
+        let h = 2166136261; // FNV-1a
+        for (let i = 0; i < str.length; i++) {
+            h ^= str.charCodeAt(i);
+            h += (h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24);
+        }
+        return Math.abs(h) % mod;
+    };
+
+    document.querySelectorAll('.client__logos').forEach(box => {
+        const id = box.getAttribute('data-id') || box.textContent.trim().slice(0, 30);
+        const color = colors[hashToIndex(id, colors.length)];
+        box.style.backgroundColor = color;
+    });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const cssVars = ['--brown', '--red-brown', '--red'];
+    const rootStyles = getComputedStyle(document.documentElement);
+    const colors = cssVars
+        .map(v => rootStyles.getPropertyValue(v).trim())
+        .filter(Boolean);
+    if (!colors.length) return;
+
+    const hashToIndex = (str, mod) => {
+        let h = 2166136261; // FNV-1a
+        for (let i = 0; i < str.length; i++) {
+            h ^= str.charCodeAt(i);
+            h += (h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24);
+        }
+        return Math.abs(h) % mod;
+    };
+
+    document.querySelectorAll('.about__content').forEach(box => {
+        const id = box.getAttribute('data-id') || box.textContent.trim().slice(0, 30);
+        const color = colors[hashToIndex(id, colors.length)];
+        box.style.backgroundColor = color;
+    });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const cssVars = ['--brown', '--red-brown', '--red'];
+    const rootStyles = getComputedStyle(document.documentElement);
+    const colors = cssVars
+        .map(v => rootStyles.getPropertyValue(v).trim())
+        .filter(Boolean);
+    if (!colors.length) return;
+
+    const hashToIndex = (str, mod) => {
+        let h = 2166136261; // FNV-1a
+        for (let i = 0; i < str.length; i++) {
+            h ^= str.charCodeAt(i);
+            h += (h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24);
+        }
+        return Math.abs(h) % mod;
+    };
+
+    document.querySelectorAll('.contact__info').forEach(box => {
+        const id = box.getAttribute('data-id') || box.textContent.trim().slice(0, 30);
+        const color = colors[hashToIndex(id, colors.length)];
+        box.style.backgroundColor = color;
+    });
+});
