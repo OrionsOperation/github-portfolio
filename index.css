@@ -39,8 +39,8 @@
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
     --dark-brown: #3e1900d9;
-    --brown: #B05700d9;
-    --red: #5f0000d9;
+    --brown: #601c00d9;
+    --red: #5f1100d9;
     --red-brown: #d13604d9;
     --orange: #ff7200d9;
 
@@ -76,7 +76,10 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: linear-gradient(var(--dark-brown), rgba(0,0,0, .4)), url('./images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     overflow-x: hidden;
 }
 
@@ -408,8 +411,6 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -449,7 +450,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
     .work__box {
         align-items: initial;
         flex-direction: column-reverse;
@@ -460,7 +461,7 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: 25rem;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     .work__box:not(:last-child) {
         margin-bottom: 20rem;
     }

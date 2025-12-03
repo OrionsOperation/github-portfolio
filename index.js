@@ -58,11 +58,20 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         return Math.abs(h) % mod;
     };
+    function hexToRgba(hex, alpha = 0.85) {
+        const h = hex.replace('#', '').trim();
+        const hexNormalized = h.length === 3
+            ? h.split('').map(ch => ch + ch).join('')
+            : h;
+        const r = parseInt(hexNormalized.slice(0, 2), 16);
+        const g = parseInt(hexNormalized.slice(2, 4), 16);
+        const b = parseInt(hexNormalized.slice(4, 6), 16);
+        return `${r}${g}${b}${alpha}`;
+    }
 
-    document.querySelectorAll('.row').forEach(box => {
+    document.querySelectorAll('section').forEach(box => {
         const id = box.getAttribute('data-id') || box.textContent.trim().slice(0, 30);
         const color = colors[hashToIndex(id, colors.length)];
-        box.style.backgroundColor = color;
-        box.backgroundColor = color;
+        box.style.backgroundColor = hexToRgba(color, 0.85);
     });
 });
